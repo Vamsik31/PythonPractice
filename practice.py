@@ -1,7 +1,7 @@
 #
-#print('hi')
-#print(2 ** 2 ** 3)
-#print(2*3)
+print('hi')
+print(2 ** 2 ** 3)
+print(2*3)
 #print(9%6%2)
 #print(-4-4)
 #print(-4+8)
