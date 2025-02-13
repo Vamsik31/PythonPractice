@@ -32,26 +32,26 @@ connection.close()
 print("Database connection closed.")"""
 
 #Creating tables
-create_table(connection = connection, table_name="members")
+#create_table(connection = connection, table_name="members")
 #create_table( table_name="members", connection = connection)
-create_table(connection, "accounts")
+#create_table(connection, "accounts")
 
 #inserting data
 first_name = "Vamsi"
 last_name = "Karumanchi"
 gender = "M"
-#create_member(connection, first_name, last_name, gender)
+create_member(connection, first_name, last_name, gender)
 
 #selecting records
 retrieve_members(connection)
 
-"""#update
+#update
 update_member(connection, 8, "Nag", "Talluri")
-#delete
-delete_member(connection,9)"""
+#Delete
+delete_member(connection,14)
 
 
-"""def fetch(connection):
+def fetch(connection):
    cursor= connection.cursor()
    cursor.execute("select * FROM members")
    rows=cursor.fetchall()
@@ -59,4 +59,4 @@ delete_member(connection,9)"""
    return rows
 data=fetch(connection)
 for row in data:
-      print(row)"""
+      print(row)
