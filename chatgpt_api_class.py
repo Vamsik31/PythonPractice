@@ -1,9 +1,12 @@
 from openai import OpenAI
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv(dotenv_path=".env")
 
 class chatgpt_example:
     transactions = None
 
-    def __init(self, input_value):
+    def __init__(self, input_value):
         self.transactions = input_value
                     
     def summarize_assistant(self, first_name, last_name):
