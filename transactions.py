@@ -11,7 +11,7 @@ def create_transaction(connection, Transaction_Id, Member_id, Date,Amount,Tran_t
     """, (Transaction_Id, Member_id, Date,Amount,Tran_type,Desc))
     connection.commit()
     #id = cursor.fetchone()[0]
-    print(f"Record inserted successfully!")
+    print(f"Record inserted successfully in transaction table!"+{Member_id})
 
 
 def retrieve_transactions(connection, member_id=None):
