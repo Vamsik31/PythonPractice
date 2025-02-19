@@ -1,6 +1,5 @@
 def create_table(connection, table_name):
     cursor = connection.cursor()
-    print('before exc')
     if(table_name == 'members'):
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS members (
@@ -10,7 +9,6 @@ def create_table(connection, table_name):
             gender VARCHAR(10)
         );
         """)
-       
     elif(table_name == 'accounts'):
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS accounts (
