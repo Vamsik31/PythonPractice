@@ -19,8 +19,11 @@ class Member:
         self.salary = salary
         self.__ssn = None
         self.__created_at = datetime.now()
+        if self.age<18:
+            raise ValueError("Age is not valid")
+        else:
+            print("Age is valid")
 
-        
 
         try:
             self.connection = psycopg2.connect(
@@ -39,10 +42,8 @@ class Member:
             self.connection.close()
             print("Database connection closed.")
 
-"""# Example usage
 try:
-    new_member = Member(email="test@example.com", age=20)
+    new_member = Member(email="Vamsi@yahoo.com", age=27)
     print("Member created successfully!")
 except ValueError as e:
-    print(f"Error: {e}")"""
-
+    print(f"Error: {e}")
