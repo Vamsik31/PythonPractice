@@ -22,7 +22,7 @@ class Member:
         self.salary = salary
         self.__ssn = ssn
         if self.age<18:
-            raise ValueError("Age must be 18 or older")
+            raise ValueError("age must be 18 or older")
         else:
             self.age = age
             
@@ -63,7 +63,7 @@ while True:
     try:
         age = int(input("Enter age: "))
         if age < 18:
-            print("Age must be 18 or older. Please try again.")
+            print("age must be 18 or older. Please try again.")
         else:
             break
     except ValueError:
