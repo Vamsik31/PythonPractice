@@ -231,3 +231,11 @@ for i in range(len(thislist)):
 
 #Classes
 
+import logging
+try:
+    a=10/0
+    print(a)
+    a=10/0
+    print(a)
+except Exception as e:
+    logging.error(e,exc_info=True)
