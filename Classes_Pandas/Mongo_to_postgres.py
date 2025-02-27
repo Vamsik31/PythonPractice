@@ -7,9 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 mongo_uri = os.getenv("MONGO_DB_CONNECTION")
-
 uri = os.getenv("MONGO_DB_CONNECTION")
-#print(uri)
 client = MongoClient(mongo_uri)
 try:
     client.admin.command('ping')
