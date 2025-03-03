@@ -216,7 +216,7 @@ None Type:	NoneType"""
 # // --Floor division;-	x // y
 
 
-"""thislist = ["apple", "banana", "cherry"]
+thislist = ["apple", "banana", "cherry"]
 for i in range(len(thislist)):
   print(thislist[i])
 #--------------------------
@@ -226,30 +226,8 @@ for i in range(len(thislist)):
      if 'a' in  x:
         newlist.append(x)
 
-        print(newlist)"""
+        print(newlist)
 #--------------------------------------------------
 
 #Classes
-
-"""import logging
-try:
-    a=10/0
-    print(a)
-    a=10/0
-    print(a)
-except Exception as e:
-    logging.error(e,exc_info=True)"""
-
-
-#for x  in "banana":
- # print(x)
-
-a=100
-b=200
-if a>b:
-    print('a is greater than b')
-else:
-    print('b is greater than a')
-
-
 
